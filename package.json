@@ -14,7 +14,8 @@
     "nodemon": "^3.0.1"
   },
   "dependencies": {
-    "@google-cloud/local-auth": "^2.1.0",
-    "googleapis": "^105.0.0"
+    "@types/nodemailer": "^6.4.9",
+    "dotenv": "^16.3.1",
+    "nodemailer": "^6.9.4"
   }
 }

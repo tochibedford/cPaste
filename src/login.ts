@@ -1,8 +1,16 @@
-import fs from "fs";
-import path from "path";
-import { authenticate } from "@google-cloud/local-auth";
-import { google } from "googleapis";
+import nodemailer from "nodemailer";
 
-const SCOPES = ["https://www.googleapis.com/auth/gmail.send"];
+async function emailLoginTransporter() {
+  const testAccount = await nodemailer.createTestAccount();
+  const transporter = nodemailer.createTransport({
+    host: "smtp.ethereal.email",
+    port: 587,
+    secure: false,
+    auth: {
+      user: testAccount.user,
+      pass: testAccount.pass,
+    },
+  });
 
-function gmailLogin() {}
+  return transporter;
+}
