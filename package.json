@@ -1,0 +1,20 @@
+{
+  "name": "cpaste",
+  "version": "1.0.0",
+  "description": "Copy on Windows/MacOs, Paste on ios",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/main.ts",
+    "start:watch": "nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "@google-cloud/local-auth": "^2.1.0",
+    "googleapis": "^105.0.0"
+  }
+}
