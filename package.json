@@ -1,22 +1,28 @@
 {
   "name": "cpaste",
-  "version": "1.0.0",
-  "description": "Copy on Windows/MacOs, Paste on ios",
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "Ctrl+C on windows, paste on your ios device",
+  "main": "main.js",
   "scripts": {
-    "start": "ts-node src/main.ts",
-    "start:watch": "nodemon"
+    "start": "electron ."
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tochibedford/cPaste.git"
+  },
+  "keywords": [
+    "copy",
+    "paste",
+    "windows",
+    "ios"
+  ],
+  "author": "tochi bedford",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tochibedford/cPaste/issues"
+  },
+  "homepage": "https://github.com/tochibedford/cPaste#readme",
   "devDependencies": {
-    "nodemon": "^3.0.1"
-  },
-  "dependencies": {
-    "@types/nodemailer": "^6.4.9",
-    "clipboardy": "^3.0.0",
-    "dotenv": "^16.3.1",
-    "nodemailer": "^6.9.4"
+    "electron": "^25.5.0"
   }
 }
